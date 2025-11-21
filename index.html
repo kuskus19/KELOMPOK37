@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINIX7 - Gabung Industry Mentor Network</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+    <style>
+        /* CSS tambahan untuk tampilan nilai tertinggi di Landing Page */
+        .top-students-imn {
+            background-color: #f0f0f5; 
+        }
+        .top-scores-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .score-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            min-width: 250px;
+            transition: transform 0.3s;
+        }
+        .score-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        .score-card h3 {
+            color: #172a3a;
+            font-size: 1.2em;
+            margin-top: 0;
+            border-bottom: 2px solid #ff9900;
+            padding-bottom: 10px;
+        }
+        .score-value {
+            font-size: 3em;
+            color: #ff9900;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        /* NEW: Gaya untuk Mitra Industri */
+        .partner-imn {
+            background-color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .partner-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 30px;
+        }
+        .partner-logos img {
+            max-width: 150px; /* Ukuran logo */
+            height: auto;
+            opacity: 0.7; /* Membuat logo sedikit pudar */
+            transition: opacity 0.3s;
+            filter: grayscale(100%); /* Membuat logo hitam putih */
+        }
+        .partner-logos img:hover {
+            opacity: 1;
+            filter: grayscale(0%); /* Warna muncul saat di-hover */
+        }
+    </style>
+    </head>
+<body>
+
+    <header class="hero-imn">
+    <div class="container">
+        <h1>Jadilah Bagian Dari Perubahan Dengan Bergabung Di Industry Mentor Network VINIX7. 🚀</h1>
+        <p>Berbagi wawasan, merekrut talenta masa depan, dan memperluas jaringan profesional Anda tanpa biaya.</p>
+        
+        <a href="#pendaftaran" class="cta-imn-primary">Daftar Sekarang Sebagai Mentor</a>
+        
+        <a href="login.html" class="cta-imn-primary" style="margin-left: 15px; background-color: #007bff; border: 2px solid #007bff;">Masuk ke Portal</a>
+    </div>
+    </header>
+
+    <section class="value-imn">
+        <div class="container">
+            <h2>Manfaat Eksklusif Bagi Anda (The Mentor)</h2>
+            <div class="value-cards">
+                <div class="card-imn">
+                    <span class="material-icons">star_rate</span>
+                    <h3>Pengakuan Industri</h3>
+                    <p>Tingkatkan profil profesional Anda dengan sertifikat apresiasi dan *badge* "Top Contributor".</p>
+                </div>
+                <div class="card-imn">
+                    <span class="material-icons">group_add</span>
+                    <h3>Akses Talenta Dini</h3>
+                    <p>Identifikasi dan rekrut kandidat potensial terbaik sebelum mereka memasuki pasar kerja umum.</p>
+                </div>
+                <div class="card-imn">
+                    <span class="material-icons">schedule</span>
+                    <h3>Fleksibilitas Digital</h3>
+                    <p>Atur jadwal konsultasi 15-30 menit sesuai ketersediaan Anda melalui sistem booking terintegrasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flow-imn">
+        <div class="container">
+            <h2>Proses Bergabung Sangat Mudah</h2>
+            <div class="flow-steps" id="flowStepsIMN">
+                <div class="step active" data-id="step1">1. Registrasi Profil</div>
+                <div class="step" data-id="step2">2. Verifikasi & Onboarding</div>
+                <div class="step" data-id="step3">3. Mulai Mentoring</div>
+            </div>
+
+            <div class="flow-content-area">
+                <div class="flow-content active" id="step1-content">
+                    <h3>Pendaftaran Cepat</h3>
+                    <p>Isi formulir singkat tentang keahlian (Cybersecurity, AI, Data), jabatan, dan industri Anda.</p>
+                </div>
+                <div class="flow-content" id="step2-content">
+                    <h3>Validasi Kompetensi</h3>
+                    <p>Tim VINIX7 akan memverifikasi profil dan memberikan panduan singkat serta Kode Etik Mentor.</p>
+                </div>
+                <div class="flow-content" id="step3-content">
+                    <h3>Atur Ketersediaan</h3>
+                    <p>Sinkronkan kalender Anda. *Mentee* akan mengajukan sesi sesuai waktu luang yang Anda tentukan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-students-imn">
+        <div class="container">
+            <h2>🏆 Mahasiswa Terbaik VINIX7 (Berdasarkan Bidang)</h2>
+            <p>Lihat perkembangan terbaru talenta digital dengan nilai rata-rata tertinggi dari tiap bidang keahlian.</p>
+            <div class="top-scores-grid">
+                <div class="score-card">
+                    <h3>Data Science & AI/ML</h3>
+                    <p class="score-value">9.8</p>
+                    <p>Andi Pratama</p>
+                </div>
+                <div class="score-card">
+                    <h3>Cybersecurity</h3>
+                    <p class="score-value">9.6</p>
+                    <p>Bunga Sari</p>
+                </div>
+                <div class="score-card">
+                    <h3>UI/UX Design</h3>
+                    <p class="score-value">9.5</p>
+                    <p>Citra Dewi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="partner-imn">
+        <div class="container">
+            <h2>Mitra Industri Kami: Tempat Mentor Berasal</h2>
+            <p>Jaringan Mentor IMN VINIX7 didukung oleh profesional dari perusahaan teknologi dan industri terkemuka.</p>
+            
+            <div class="partner-logos">
+                <img src="LOGO/PAMA.png" alt="PAMA">
+                <img src="LOGO/PTP6.png" alt="PTPN6">
+                <img src="LOGO/PTP3.png" alt="PTPN3">
+                <img src="LOGO/ANTAM.png" alt="ANTAM">
+                <img src="LOGO/TELKOM.png" alt="TELKOM">
+                <img src="LOGO/AWS.png" alt="AWS">
+            </div>
+            <p style="margin-top: 30px; font-style: italic;">Dan masih banyak mitra terkemuka lainnya...</p>
+        </div>
+    </section>
+    <section class="registration-form" id="pendaftaran">
+        <div class="container">
+            <h2>Daftarkan Diri Anda Sebagai Mentor</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nama" placeholder="Nama Lengkap" required>
+                <input type="email" name="email" placeholder="Email Kantor Aktif" required>
+                <input type="text" name="perusahaan" placeholder="Perusahaan & Jabatan" required>
+                <select name="keahlian" required>
+                    <option value="">-- Pilih Bidang Keahlian Utama --</option>
+                    <option value="cyber">Cybersecurity & Forensik</option>
+                    <option value="data">Data Science & AI/ML</option>
+                    <option value="data">UI UX & WEB DEV</option>
+                    <option value="blockchain">Blockchain Development</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+                <textarea name="pengalaman" placeholder="Jelaskan Pengalaman Anda (min. 5 tahun)" required></textarea>
+                <button type="submit" class="cta-imn-primary">KIRIM PENDAFTARAN</button>
+            </form>
+            <p class="small-note">Kami akan menghubungi Anda dalam 2x24 jam untuk verifikasi.</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PT Vinix Seven Aurum | Membangun Talenta Digital Indonesia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <a href="contact.html" class="floating-help-btn">
+    <span class="material-icons">help_outline</span>
+    Bantuan / Hubungi Kami
+</a>
+</body>
+</html>
